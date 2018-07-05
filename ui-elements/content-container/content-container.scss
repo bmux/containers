@@ -1,0 +1,44 @@
+.content-container {
+  border-width: $line-width-xl;
+  border-style: solid;
+  border-radius: $line-width-xl;
+}
+
+.content-container-neutral {
+  border-color: $c-gray-600;
+}
+
+.content-container-action {
+  border-color: $c-gray-600;
+}
+
+.content-container-right {
+  border-color: $c-gray-600;
+}
+
+.content-container-wrong {
+  border-color: $c-gray-600;
+}
+
+.content-container-warning {
+  border-color: $c-gray-600;
+}
+
+.content-container-attention {
+  border-color: $c-gray-600;
+}
+
+.content-container-header {
+	width: auto;
+	display: inline-block;
+	font-size: $font-size-m;
+	line-height: $line-height-m;
+}
+
+.content-container-header,
+.content-container-body {
+  padding-left: $exercise-horizontal-content-spacing-xs;
+  padding-right: $exercise-horizontal-content-spacing-xs;
+  padding-top: $exercise-vertical-content-spacing-xs;
+  padding-bottom: $exercise-vertical-content-spacing-xs;
+}
