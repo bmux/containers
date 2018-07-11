@@ -45,12 +45,26 @@
 .content-container-title {
     display: table-cell;
     width: 0;
-    vertical-align: middle;
 }
 
 .content-container-title {
     padding: 8px;
+    vertical-align: middle;
 }
+
+
+.content-container-title {
+  font-weight: bold;
+  width: 100%;
+}
+
+.content-container-body {
+  padding-left: $exercise-horizontal-content-spacing-xs;
+  padding-right: $exercise-horizontal-content-spacing-xs;
+  padding-top: $exercise-vertical-content-spacing-xs;
+  padding-bottom: $exercise-vertical-content-spacing-xs;
+}
+
 
 .content-container-toggle-btn {
   min-width: 32px;
@@ -66,52 +80,39 @@
   text-align: horizontal;
 }
 
-.content-container-title {
-  font-weight: bold;
-  width: 100%;
+
+.content-container-toggle-icon {
+  position: relative;
+  width: 20px;
+  height: 20px;
 }
 
-.content-container-body {
-  padding-left: $exercise-horizontal-content-spacing-xs;
-  padding-right: $exercise-horizontal-content-spacing-xs;
-  padding-top: $exercise-vertical-content-spacing-xs;
-  padding-bottom: $exercise-vertical-content-spacing-xs;
+.content-container-toggle-icon span {
+  position: absolute;
+  transition: .3s;
+  background: $c-text-medium;
+  border-radius: 2px;
 }
 
-
-/*
-
-.menu {
-    display: table;
-    width: 100%;
+.content-container-toggle-icon span:first-of-type {
+  height: 20px;
+  width: 2px;
+  left: 9px;
+  transform: rotate(90deg);
 }
 
-.menu__item {
-    position: relative;
-    display: table-row;
-    overflow: auto;
+.content-container-toggle-icon span:last-of-type {
+  left: 0;
+  right: 0;
+  height: 2px;
+  top: 9px;
+  transform: rotate(180deg);
 }
 
-.menu__item-element {
-    display: table-cell;
-    width: 0;
-    color: @text-color-link;
-    vertical-align: middle;
-    .padding(10, 5);
-    .min-height(42);
-    border-top: 0.1rem solid #DDD;
+.content-container-closed .content-container-toggle-icon span:first-of-type {
+  transform: rotate(0);
 }
 
-.menu__item-element:first-child {
-    .padding-left(10);
+.content-container-closed .content-container-toggle-icon span:last-of-type {
+  transform: rotate(0);
 }
-
-.menu__item-element:last-child {
-    .padding-right(10);
-}
-
-.menu__item-element_main {
-    width: 100%;
-}
-
-*/
